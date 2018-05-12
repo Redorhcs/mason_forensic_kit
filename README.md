@@ -1,0 +1,1 @@
+# network_minter_on_kali
