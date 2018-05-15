@@ -1,0 +1,10 @@
+2015-03-10 - Snort 2.9.7.2
+[*] New additions
+*  Support for Cisco FabricPath decoding/encoding.
+
+[*] Improvements
+*  Resolved an issue where the inline normalization preprocessor incorrectly
+   resized packets when 'preprocessor normalize_tcp: trim' was enabled.
+
+*  Resolved crash in file processing of HTTP continuations.
+
