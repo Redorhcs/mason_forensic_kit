@@ -10,4 +10,4 @@ A very simple shell script to process the installation of NetworkMiner. Adapated
 3. Google NetworkMiner icon and save it; then put the file location of the image for the icon. (Click on the box to the left for icon selection)
 
 ## Snort_Windows_Config
-A copy of Snort 2.9.x with a working configuration for PCAP analysis. Currently has the reputation preprocessor disabled, with plans to enable.
+A copy of Snort 2.9.11.x with a working configuration for PCAP analysis and general use. Currently has the reputation preprocessor disabled, with plans to enable.
