@@ -38,7 +38,7 @@ sudo tar -xvf ~/registered.tar.gz -C /etc/snort
 # CALL gist for the confighttps://gist.github.com/0139caf756c24b92e7b5de35c0d7af49.git
 git clone https://gist.github.com/0139caf756c24b92e7b5de35c0d7af49.git
 cd 0139caf756c24b92e7b5de35c0d7af49
-cp snort.conf ~/snort_src/snort-2.9.11.1/etc/snort/
+cp snort.conf ~/snort_src/snort-2.9.11.1/etc/snort.conf
 # sudo nano /etc/snort/snort.conf
 # What does this config do?
 # Setup the network addresses you are protecting
