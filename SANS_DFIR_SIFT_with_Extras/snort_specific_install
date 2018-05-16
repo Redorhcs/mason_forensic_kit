@@ -35,7 +35,12 @@ sudo cp ~/community-rules/* /etc/snort/rules
 sudo sed -i 's/include \$RULE\_PATH/#include \$RULE\_PATH/' /etc/snort/snort.conf
 wget https://www.snort.org/rules/snortrules-snapshot-29111.tar.gz?oinkcode=$OINK_CODE -O ~/registered.tar.gz
 sudo tar -xvf ~/registered.tar.gz -C /etc/snort
-sudo nano /etc/snort/snort.conf
+# CALL gist for the confighttps://gist.github.com/0139caf756c24b92e7b5de35c0d7af49.git
+git clone https://gist.github.com/0139caf756c24b92e7b5de35c0d7af49.git
+cd 0139caf756c24b92e7b5de35c0d7af49
+cp snort.conf ~/snort_src/snort-2.9.11.1/etc/snort/
+# sudo nano /etc/snort/snort.conf
+# What does this config do?
 # Setup the network addresses you are protecting
 # ipvar HOME_NET <server public IP>/32
 #
