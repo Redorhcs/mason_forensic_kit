@@ -26,16 +26,16 @@ sudo chown -R snort:snort /usr/local/lib/snort_dynamicrules
 sudo touch /etc/snort/rules/white_list.rules
 sudo touch /etc/snort/rules/black_list.rules
 sudo touch /etc/snort/rules/local.rules
-sudo cp ~/snort_src/snort-2.9.11.1/etc/*.conf* /etc/snort
-sudo cp ~/snort_src/snort-2.9.11.1/etc/*.map /etc/snort
+sudo cp ~/snort_src/snort-2.9.11.1/etc/*.conf* ~/snort_src/snort-2.9.11.1/snort/etc
+sudo cp ~/snort_src/snort-2.9.11.1/etc/*.map ~/snort_src/snort-2.9.11.1/snort/etc
 wget https://www.snort.org/rules/community -O ~/community.tar.gz
 sudo tar -xvf ~/community.tar.gz -C ~/
-sudo cp ~/community-rules/* /etc/snort/rules
+sudo cp ~/community-rules/* ~/snort_src/snort/etc//rules
 # Note: you have to go back and uncomment all the registered rules with this
 sudo sed -i 's/include \$RULE\_PATH/#include \$RULE\_PATH/' /etc/snort/snort.conf
 wget https://www.snort.org/rules/snortrules-snapshot-29111.tar.gz?oinkcode=$OINK_CODE -O ~/registered.tar.gz
-sudo tar -xvf ~/registered.tar.gz -C /etc/snort
-# CALL gist for the confighttps://gist.github.com/0139caf756c24b92e7b5de35c0d7af49.git
+sudo tar -xvf ~/registered.tar.gz -C ~/snort_src/snort-2.9.11.1/etc/snort
+# CALL gist for the config @ https://gist.github.com/0139caf756c24b92e7b5de35c0d7af49.git
 git clone https://gist.github.com/0139caf756c24b92e7b5de35c0d7af49.git
 cd 0139caf756c24b92e7b5de35c0d7af49
 cp snort.conf ~/snort_src/snort-2.9.11.1/etc/snort.conf
