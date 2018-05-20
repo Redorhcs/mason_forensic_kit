@@ -30,7 +30,7 @@ sudo cp ~/snort_src/snort-2.9.11.1/etc/*.conf* ~/snort_src/snort-2.9.11.1/snort/
 sudo cp ~/snort_src/snort-2.9.11.1/etc/*.map ~/snort_src/snort-2.9.11.1/snort/etc
 wget https://www.snort.org/rules/community -O ~/community.tar.gz
 sudo tar -xvf ~/community.tar.gz -C ~/
-sudo cp ~/community-rules/* ~/snort_src/snort/etc//rules
+sudo cp ~/community-rules/* ~/snort_src/snort/etc/rules
 # Note: you have to go back and uncomment all the registered rules with this
 sudo sed -i 's/include \$RULE\_PATH/#include \$RULE\_PATH/' /etc/snort/snort.conf
 wget https://www.snort.org/rules/snortrules-snapshot-29111.tar.gz?oinkcode=$OINK_CODE -O ~/registered.tar.gz
