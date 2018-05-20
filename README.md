@@ -19,7 +19,7 @@ After installing the same virtual machine and their associated tools for the twe
 * Downloads can be grabbed from either the releases page, or a straight-up clone if you're adventerous
 * Scripts may require `chmod +x <scriptName>` to execute
 
-### Executing program
+### Executing programs
 
 #### SANS DFIR SIFT
 * Navigate to the install directory
@@ -55,6 +55,12 @@ A copy of Snort 2.9.11.x with a working configuration for PCAP analysis and gene
 
 ### network_miner_on_kali
 A very simple shell script to process the installation of NetworkMiner. Adapated from https://www.netresec.com/?page=Blog&month=2014-02&post=HowTo-install-NetworkMiner-in-Ubuntu-Fedora-and-Arch-Linux
+
+#### How to Create an icon
+Note that this must be done manually, I've not found a way to automate the GUI part of this.
+ 1. sudo apt install alacarte
+ 2. Set command to location of NetworkMiner.sh
+ 3. [Download the NM Icon](http://www.netresec.com/images/NetworkMiner_logo_313x313.png) and save it; then put the file location of the image for the icon. (Click on the box to the left for icon selection)
 
 ## Authors
 
