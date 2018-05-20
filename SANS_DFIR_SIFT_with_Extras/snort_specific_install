@@ -36,6 +36,7 @@ sudo sed -i 's/include \$RULE\_PATH/#include \$RULE\_PATH/' /etc/snort/snort.con
 wget https://www.snort.org/rules/snortrules-snapshot-29111.tar.gz?oinkcode=$OINK_CODE -O ~/registered.tar.gz
 sudo tar -xvf ~/registered.tar.gz -C ~/snort_src/snort-2.9.11.1/etc/snort
 # CALL gist for the config @ https://gist.github.com/0139caf756c24b92e7b5de35c0d7af49.git
+cd ~/
 git clone https://gist.github.com/0139caf756c24b92e7b5de35c0d7af49.git
 cd 0139caf756c24b92e7b5de35c0d7af49
 cp snort.conf ~/snort_src/snort-2.9.11.1/etc/snort.conf
